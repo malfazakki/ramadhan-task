@@ -7,11 +7,11 @@ function generateFibonacci($n) {
     if ($n >= 2) {
         $fibonacci[] = 1;
     }
-    
+
     for ($i = 2; $i < $n; $i++) {
-        $fibonacci[] = $fibonacci[$i-1] + $fibonacci[$i-2];
+        $fibonacci[] = $fibonacci[$i - 1] + $fibonacci[$i - 2];
     }
-    
+
     return $fibonacci;
 }
 
@@ -21,4 +21,3 @@ $fibSequence = generateFibonacci($input);
 
 // Output the result
 echo implode(',', $fibSequence);
-?>
